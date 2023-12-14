@@ -83,7 +83,38 @@
         }
         // document.write("Sum:" + sum + "<br/>");
     }
-    loops();
+    // loops();
+
+    function evaluate()
+    {
+        var x=2, y=39,z='42';
+       var ans=eval("x+y+1");
+        document.write(ans);
+        console.log(ans);
+
+    }
+    // evaluate();
+    function parsing()
+    {
+        var n=prompt("Enter a nnumber:")
+        var ans=parseInt(n,10);
+        document.write(ans);
+        // document.write(escape('city %20 is'));
+        document.write(unescape('city %20 is'));
+    }
+    // parsing();
+
+    function dates()
+    {
+        var today=new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth();
+        var day = today.getDate();
+
+        document.write(year+"/"+month+"/"+day);
+    }
+    dates();
+
 
 
     
