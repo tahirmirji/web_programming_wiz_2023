@@ -106,12 +106,19 @@
 
     function dates()
     {
+        // get individual date components
         var today=new Date();
         var year = today.getFullYear();
         var month = today.getMonth();
         var day = today.getDate();
+        // get time
+        var hr=today.getHours();
+        var min=today.getMinutes();
+        var meridium = hr>=12 ? 'PM': 'AM';
 
         document.write(year+"/"+month+"/"+day);
+        document.write("<br>");
+        document.write(eval(hr%12)+":"+min+" "+meridium);
     }
     dates();
 
