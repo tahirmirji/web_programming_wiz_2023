@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<script type="text/javascript">
+function sayHello(x,y)
+{
+    var var1=x;
+    var var2=y;
+    var var3=var1+var2;
+    var result="Sum of two numbers is " + var3;
+    // alert(result);
+    return result;
+}
+var myVar="Global";
+function scopecheck()
+{
+    var myVar="Local";
+    return myVar;
+
+}
+
+function square(x)
+{
+    var1=x*x;
+    // return var1;
+    document.write(var1);
+
+}
+
+
+</script>
+
+</head>
+<body>
+    <!-- <script type="text/javascript">
+    document.write("Am from document.write statement!!!")
+    </script>
+    <h1>    
+        <script type="text/javascript">
+            res= sayHello(100,200); document.write(res);
+        </script>  
+    </h1>
+
+    <script type="text/javascript">
+       res=scopecheck();
+       document.write(res)
+    </script> -->
+<div style="color: blue;font-size:larger">
+    <script type="text/javascript">
+        square(5);
+    </script>
+</div>
+
+<p id="demo1"> </p>
+
+<p id="car"> </p>
+
+
+<script type="text/javascript">
+let person={name:'John',age:50}
+document.getElementById('demo1').innerHTML = person.name + " is " + person.age + " years old ";
+
+// Creating a car object with car name BMW,black,50L,7
+let myCar={
+    name:'BMW',
+    color:'Black',
+    model:'x5 Series',
+    price:9700000.00,
+
+}
+str="I have purchased <b>"+myCar.color+"</b> <i>"+myCar.name+"</i> model "+myCar.model+" with Rs."+myCar.price+"L";
+document.getElementById('car').innerHTML = str;
+
+
+</script>
+</body>
+</html>

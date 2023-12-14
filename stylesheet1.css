@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+}
+
+p{
+    font-size: 20pt;
+}
+
+
+.wiztoonz_heading{
+    font-size: 20pt;
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+
+#buttonText{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 10px 10px 4px #000000;
+
+}

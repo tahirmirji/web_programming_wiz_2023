@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <p id="cars"> </p>
+
+    <script type="text/javascript">
+        function examples(){
+        // array of car names initialized
+        let car=['BMW','Audi','Jaguar','Land Rover'];
+        // print first car name with index=0
+        // document.write(car[3]);
+        // document.getElementById('cars').innerHTML= "I park cars in my garage: "+car;
+        // I park cars in my garage:
+
+    //     var A=10,B=20;
+        
+    //     let num=prompt("Enter a number:");
+    //         num=parseInt(num);
+
+    //     if(num%2==0)   // check if num%2 is producing remainder
+    //     {
+    //         // if reminder is zero its even
+    //         alert(num+" is EVEN");
+    //     }
+    //     else
+    //     {
+    //         alert(num+" is ODD");
+    //     }
+     }
+
+ 
+    //                             //   \n will give us newline
+    // document.write("KBC<br>");
+
+
+    // var answer=prompt("Q: What is the capital of India? \n"+"A: Delhi\n"+"B: Karnataka\n"+"C: Maharashtra\n"+"D: Rajasthan\n");
+    // answer=answer.toUpperCase();
+    // switch(answer)
+    // {
+    //     case 'A':
+    //     document.write("Answer A: Delhi is right");
+    //     break;
+        
+    //     case 'B':
+    //     document.write("Answer B: Karnataka is not right");
+    //     break;
+
+    //     case 'C':
+    //     document.write("Answer C: Maharashtra is not right");
+    //     break;
+
+    //     case 'D':
+    //     document.write("Answer D: Rajasthan is not right");
+    //     break;
+
+    //     default: 
+    //     document.write("Invalid Option, try again");
+    //     break;
+    // }
+
+
+    function loops()
+    {
+        // create an array of car names and print them with the help of for loop
+        // sum=0;
+                // =[     0,  1,           , 2         ,3      ]
+        const mycars=['Audi','Range Rover','Honda City','BMW X5','mercedes'];
+        const mycarimages=['https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','https://images.pexels.com/photos/18461766/pexels-photo-18461766/free-photo-of-blue-honda-civic.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'];
+
+        for (let i=0; i<5; i++)
+        {  // sum 1 <= 0  + 1 
+            // sum = sum + i; // Cumulative summation
+            document.write(mycars[i]+'<img src="'+mycarimages[i]+'" width="200px" > <br>')
+        }
+        // document.write("Sum:" + sum + "<br/>");
+    }
+    loops();
+
+
+    
+
+
+
+    </script>
+
+</body>
+</html>
